@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticaActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/factor1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="10"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="X"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/factor2"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="10"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/producto" />
+
+    <EditText
+        android:id="@+id/producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Respuesta"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="="
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

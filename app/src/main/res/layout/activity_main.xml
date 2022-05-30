@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tarjetaPerfil"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/charro"
+                tools:srcCompat="@drawable/charro" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alejandro Sandoval"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="        Super Boss"
+                    android:textColor="#686767"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Perfil"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tarjetaPerfil">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hoja"
+                tools:srcCompat="@drawable/hoja" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hoja"
+                tools:srcCompat="@drawable/hoja" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/estudiando"
+                tools:srcCompat="@drawable/estudiando" />
+
+            <Button
+                android:id="@+id/btnPractica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/boton_card"
+                android:text="Prácticar"
+                app:cornerRadius="65dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="24dp"
+                android:text="                              Prácticar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnPractica"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="Prácticar las tablas"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
